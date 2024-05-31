@@ -138,12 +138,14 @@ body {
 
 .input-area {
   padding-top: 20px;
-  display: flex;
-  justify-content: center;
+  margin: 0 auto;
+  max-width: 584px;
+  width: auto;
 }
 
 .input-box {
-  width: 584px;
+  max-width: 584px;
+  width: 100%;
   height: 46px;
   background: #fff;
   border: 1px solid #dfe1e5;
@@ -160,9 +162,11 @@ body {
 }
 
 .input {
-  width: 440px;
+  width: 80%;
+  max-width: 440px;
   font-size: medium;
   border: none;
+  margin: 0 10px;
 }
 
 .input:focus {
@@ -173,10 +177,16 @@ body {
   color: #9aa0a6;
 }
 
+.input-icon-box {
+  display: flex;
+  flex-direction: row;
+  height: 44px;
+}
+
 .input-icon-img {
   width: 24px;
   height: 24px;
-  margin-right: 15px;
+  margin: 10px 15px 10px 0;
   cursor: pointer;
 }
 
@@ -249,8 +259,13 @@ body {
 
 .footer-secondLine {
   padding: 15px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
-.footer-secondLine-second {
-  float: right;
+@media only screen and (max-width: 1200px) {
+  .footer-secondLine {
+    justify-content: space-evenly;
+  }
 }
