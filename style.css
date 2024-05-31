@@ -3,17 +3,17 @@
   margin: 0;
   padding: 0;
 }
-body,
-html {
-  height: 100%;
+
+body {
+  height: 100vh;
   min-width: 400px;
+  overflow: hidden;
 }
 .navbar {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 6px;
-  /* margin: 20px; */
   height: 60px;
 }
 .nav-item-left {
@@ -101,7 +101,7 @@ html {
   width: 42px;
   height: 42px;
 }
-.main {
+.logo-area {
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -138,6 +138,8 @@ html {
 
 .input-area {
   padding-top: 20px;
+  display: flex;
+  justify-content: center;
 }
 
 .input-box {
@@ -180,6 +182,7 @@ html {
 
 .button-area {
   padding-top: 18px;
+  text-align: center;
 }
 
 .button-style {
@@ -208,6 +211,7 @@ html {
   padding-top: 20px;
   font-size: small;
   color: #4d5156;
+  text-align: center;
 }
 
 .language-area a {
@@ -250,5 +254,3 @@ html {
 .footer-secondLine-second {
   float: right;
 }
-
-/* #5c6bc0  user */
